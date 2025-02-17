@@ -8,7 +8,7 @@ difficulty_level = input("Choose a difficulty. Type 'easy' or 'hard': ").lower()
 answer = random.randint(1,100)
 
 def attempts(remaining):
-    guess = ""
+    guess = 0
     
     while guess != answer and remaining > 0:
         guess = int(input("Make a guess: "))
