@@ -5,8 +5,6 @@ print(logo)
 EASY_LEVEL_TURNS = 10
 HARD_LEVEL_TURNS = 5
 
-turns = 0
-
 def check_answer(user_guess, actual_answer, turns):
     if user_guess > actual_answer:
         print("Too high.")
