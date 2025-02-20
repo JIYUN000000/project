@@ -33,7 +33,7 @@ while game_continue:
     a = follower(account_a)
     b = follower(account_b)
 
-    def check_answer(guess, a, b, score):
+    def check_answer(guess, a, b):
         ##Get follower count of each account
         if (guess == 'a' and a > b) or (guess == 'b' and b > a):
             print("You're right!")
@@ -44,30 +44,9 @@ while game_continue:
             #False 반환 -> 오답 -> game_continue = False -> 게임 종료
             return False
     #조건이 False면 else 실행
-    if check_answer(guess, a, b, score):
+    if check_answer(guess, a, b):
         score += 1
         print(f"Your current score: {score}")
     else:
         game_continue = False
-        print(f"Your current score: {score}")
-
-
-
-
-    # if score == 0:
-    #     game_continue = False
-    #     print("Game over")
-
-
-#Check if user is correct
-
-##Use if statement to check if user is correct
-
-#Give user feedback on their guess
-
-#score keeping
-
-#make the game repeatable
-
-#Making account at position B become the next account at position A
-
+        print(f"Final score: {score}")
