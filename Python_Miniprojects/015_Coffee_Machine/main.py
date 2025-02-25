@@ -88,5 +88,3 @@ def operate():
 
 
 operate()
-# TODO: 5. Print report of all  coffee machine resources
-# TODO: 6. Check resources sufficient to make drink order
