@@ -2,7 +2,7 @@
 100개의 파이썬 미니 프로젝트를 만들며 성장하는 개발 기록
 
 ## 📜 진행 상황
-✅ 23/100 완료
+✅ 24/100 완료
 📅 목표: 2025년 5월까지 100개 완성  
 
 ## 📂 프로젝트 목록
@@ -395,6 +395,40 @@
 
 - **사용 기술:**  
   Python, turtle 모듈, 클래스(Snake, Food, Scoreboard), data.txt 파일을 사용하여 최고 점수 저장 및 불러오기, 애니메이션 효과(screen.tracer(0), screen.update())
+
+## 2️⃣4️⃣ ✉️ Mail Merge Project
+- **설명:**  
+  이 프로젝트는 Python을 사용하여 자동 초대장 생성을 수행하는 프로그램입니다.
+invited_names.txt에 입력된 이름을 활용하여, 각 사람에게 맞춘 초대장을 생성하고 저장합니다.
+
+- **특징:**  
+  - starting_letter.txt의 내용을 불러와, 이름만 변경하여 새로운 초대장 생성
+  - with open()을 사용하여 텍스트 파일을 읽고, 자동으로 여러 개의 초대장 파일을 생성
+  - PLACEHOLDER = "[name]"을 사용하여 각 이름으로 변환
+  
+- **작동 방식:**  
+  1. invited_names.txt에서 이름 목록을 불러옴
+  2. starting_letter.txt에서 초대장 템플릿을 읽음
+  3. [name]을 해당 사람의 이름으로 변경
+  4. ReadyToSend 폴더에 개인 맞춤 초대장 파일 저장
+
+- **사용 기술:**  
+  Python, 파일 입출력 (open(), read(), write()), replace()를 활용한 템플릿 문자열 변경, 파일 및 디렉토리 관리
+
+- **파일 구조:**
+  /letter_generator
+├── main.py                  # 초대장 자동 생성 프로그램
+├── /Input
+│   ├── /Names
+│   │   ├── invited_names.txt    # 초대할 사람들의 이름 목록
+│   ├── /Letters
+│   │   ├── starting_letter.txt  # 초대장 템플릿
+├── /Output
+│   ├── /ReadyToSend             # 생성된 초대장 저장 폴더
+
+
+
+
   
 ## 📧 Contact
 - GitHub: [@JIYUN000000](https://github.com/username)
