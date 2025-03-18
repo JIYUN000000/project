@@ -2,7 +2,7 @@
 100개의 파이썬 미니 프로젝트를 만들며 성장하는 개발 기록
 
 ## 📜 진행 상황
-✅ 24/100 완료
+✅ 25/100 완료
 📅 목표: 2025년 5월까지 100개 완성  
 
 ## 📂 프로젝트 목록
@@ -426,10 +426,35 @@ invited_names.txt에 입력된 이름을 활용하여, 각 사람에게 맞춘 �
 ├── /Output
 │   ├── /ReadyToSend             # 생성된 초대장 저장 폴더
 
+## 2️⃣5️⃣ 🗺️ U.S. States Game
+- **설명:**  
+  이 프로젝트는 turtle과 pandas 모듈을 활용하여 만든 미국 주 맞추기 게임입니다.
+사용자는 텍스트 입력을 통해 미국 50개 주를 맞히며, 정답을 입력할 때마다 해당 주의 위치에 이름이 표시됩니다.
+게임을 종료하면 사용자가 맞히지 못한 주 목록이 states_to_learn.csv에 저장됩니다.
 
-
-
+- **특징:**  
+  - turtle.Screen()을 활용하여 미국 지도 배경 이미지 표시
+  - pandas.read_csv()를 사용하여 미국 주 목록 및 좌표 데이터 로드
+  - 사용자가 입력한 주가 정답이면 해당 위치에 이름 표시
+  - 사용자가 "Exit"을 입력하면 남은 주 목록을 CSV 파일로 저장
   
+- **작동 방식:**  
+  1. **미국 지도 표시:** turtle을 사용하여 blank_states_img.gif를 배경으로 설정
+  2. **사용자 입력 받기:** screen.textinput()을 사용하여 주 이름 입력
+  3. **정답 확인:** 맞힌 주는 해당 좌표에 이름 표시/틀리면 다시 입력 요청
+  4. **게임 종료 및 학습 모드:** "Exit"을 입력하면 맞히지 못한 주 목록을 CSV 파일로 저장
+
+- **사용 기술:**  
+  Python, turtle 모듈, pandas를 활용하여 CSV 파일 읽기 및 쓰기, turtle.textinput()을 사용한 사용자 입력
+
+- **파일 구조:**
+/us_states_game
+├── main.py                  # 게임 실행 메인 파일
+├── 50_states.csv            # 미국 주 및 좌표 데이터
+├── blank_states_img.gif     # 미국 지도 이미지
+├── states_to_learn.csv      # 사용자가 맞히지 못한 주 목록 저장 파일
+
+
 ## 📧 Contact
 - GitHub: [@JIYUN000000](https://github.com/username)
 - Email: brilliantstar120@gmail.com
