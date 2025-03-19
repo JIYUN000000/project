@@ -2,7 +2,7 @@
 100개의 파이썬 미니 프로젝트를 만들며 성장하는 개발 기록
 
 ## 📜 진행 상황
-✅ 25/100 완료
+✅ 26/100 완료
 📅 목표: 2025년 5월까지 100개 완성  
 
 ## 📂 프로젝트 목록
@@ -453,6 +453,24 @@ invited_names.txt에 입력된 이름을 활용하여, 각 사람에게 맞춘 �
 ├── 50_states.csv            # 미국 주 및 좌표 데이터
 ├── blank_states_img.gif     # 미국 지도 이미지
 ├── states_to_learn.csv      # 사용자가 맞히지 못한 주 목록 저장 파일
+
+## 2️⃣6️⃣ 🔤 NATO Phonetic Alphabet Converter
+- **설명:**  
+이 프로젝트는 NATO 음성 알파벳(Phonetic Alphabet) 을 활용하여 사용자가 입력한 단어를 음성 코드로 변환하는 프로그램입니다. 예를 들어, "HELLO"를 입력하면 ["Hotel", "Echo", "Lima", "Lima", "Oscar"] 와 같은 리스트로 변환됩니다.
+
+- **특징:**  
+  - nato_phonetic_alphabet.csv에서 NATO 음성 알파벳 데이터 로드
+  - pandas.DataFrame.iterrows()를 사용하여 딕셔너리(phonetic_dict) 생성
+  - 사용자 입력을 받아 각 알파벳을 NATO 코드로 변환 후 리스트로 출력
+  
+- **작동 방식:**  
+  1. nato_phonetic_alphabet.csv에서 각 알파벳에 해당하는 NATO 코드 로드
+  2. phonetic_dict = {row.letter: row.code}을 사용하여 딕셔너리 생성
+  3. 사용자로부터 단어 입력 받기
+  4. 각 알파벳을 NATO 코드로 변환하여 리스트 출력
+
+- **사용 기술:**  
+  Python, CSV 파일을 pandas.read_csv()로 로드하여 딕셔너리 변환, 리스트 컴프리헨션
 
 
 ## 📧 Contact
