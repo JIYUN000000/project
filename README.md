@@ -2,7 +2,7 @@
 100개의 파이썬 미니 프로젝트를 만들며 성장하는 개발 기록
 
 ## 📜 진행 상황
-✅ 29/100 완료
+✅ 30/100 완료
 📅 목표: 2025년 5월까지 100개 완성  
 
 ## 📂 프로젝트 목록
@@ -532,6 +532,27 @@ invited_names.txt에 입력된 이름을 활용하여, 각 사람에게 맞춘 �
 
 - **사용 기술:**  
   Python, tkinter GUI 활용, pyperclip 모듈, 파일 입출력 (with open), 리스트 컴프리헨션 & random.shuffle()
+
+## 3️⃣0️⃣ 🔐 Upgraded Password Manager
+- **설명:**  
+  이 프로젝트는 tkinter와 json을 활용하여 만든 고급 비밀번호 관리 프로그램입니다.
+웹사이트, 이메일, 비밀번호 정보를 저장하고, 나중에 웹사이트 이름으로 검색할 수 있는 기능이 추가된 버전입니다.
+
+- **특징:**  
+  - data.json 파일을 이용한 영구적인 데이터 저장 및 업데이트
+  - website 이름으로 비밀번호 검색(Search) 기능 추가
+  - JSON 포맷으로 저장되어 가독성과 유지보수 용이
+  - 예외 처리 (try-except)를 통한 파일 유무 확인 및 오류 방지
+  
+- **작동 방식:**  
+  1. **Generate Password 버튼 클릭:** 강력한 랜덤 비밀번호 생성 및 자동 복사
+  2. **Add 버튼 클릭:** 비밀번호를 data.json에 저장
+  3. **Search 버튼 클릭:** 입력한 웹사이트에 해당하는 이메일과 비밀번호 팝업 출력
+  4. data.json이 없을 경우 자동 생성됨
+
+- **사용 기술:**  
+ Python, tkinter GUI 활용, pyperclip 모듈, json, try-except-else-finally 구조
+
 
 ## 📧 Contact
 - GitHub: [@JIYUN000000](https://github.com/username)
