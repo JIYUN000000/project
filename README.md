@@ -2,7 +2,7 @@
 100개의 파이썬 미니 프로젝트를 만들며 성장하는 개발 기록
 
 ## 📜 진행 상황
-✅ 30/100 완료
+✅ 31/100 완료
 📅 목표: 2025년 5월까지 100개 완성  
 
 ## 📂 프로젝트 목록
@@ -553,6 +553,26 @@ invited_names.txt에 입력된 이름을 활용하여, 각 사람에게 맞춘 �
 - **사용 기술:**  
  Python, tkinter GUI 활용, pyperclip 모듈, json, try-except-else-finally 구조
 
+## 3️⃣1️⃣ 🧠 Flashcard App
+- **설명:**  
+  이 프로젝트는 tkinter와 pandas를 사용하여 만든 프랑스어-영어 플래시카드 학습 앱입니다.
+사용자에게 프랑스어 단어를 보여주고, 3초 후 영어로 자동 전환되며, 학습 완료한 단어는 데이터에서 제거되고 저장됩니다.
+
+- **특징:**  
+  - 3초 후 자동으로 영어 뜻으로 카드 뒤집기
+  - 단어를 학습했을 경우 "✅ 버튼" 클릭으로 학습 데이터에서 제거 및 저장
+  - 진행 중이던 학습 데이터를 words_to_learn.csv 파일로 저장 및 복원
+  - french_words.csv에서 처음 단어 불러오기
+  - 아름다운 카드 이미지(card_front.png, card_back.png)와 직관적인 UI
+  
+- **작동 방식:**  
+  1. **앱 실행:** 프랑스어 단어가 보임
+  2. 3초 후 영어 뜻으로 자동 뒤집힘
+  3. **✅ 버튼 클릭:** 단어는 학습 완료 처리되어 words_to_learn.csv에서 제거됨
+  4. **❌ 버튼 클릭:** 다음 단어로 넘어감
+
+- **사용 기술:**  
+ Python, tkinter GUI 활용, pandas, random.choice(), after()
 
 ## 📧 Contact
 - GitHub: [@JIYUN000000](https://github.com/username)
