@@ -2,7 +2,7 @@
 100개의 파이썬 미니 프로젝트를 만들며 성장하는 개발 기록
 
 ## 📜 진행 상황
-✅ 32/100 완료
+✅ 33/100 완료
 📅 목표: 2025년 5월까지 100개 완성  
 
 ## 📂 프로젝트 목록
@@ -594,6 +594,27 @@ invited_names.txt에 입력된 이름을 활용하여, 각 사람에게 맞춘 �
 
 - **사용 기술:**  
  Python, datetime, pandas, random, smtplib(이메일 전송)
+
+## 3️⃣3️⃣ 🛰️ ISS Overhead Notifier
+- **설명:**  
+  이 프로젝트는 국제우주정거장(ISS)이 내 위치 상공을 지나갈 때, 그리고 밤일 경우에만 이메일로 알림을 보내주는 자동화 시스템입니다.
+open-notify API와 sunrise-sunset API를 활용해 실시간으로 조건을 체크하고, smtplib을 이용해 이메일을 전송합니다.
+
+- **특징:**  
+  - ISS 위치와 사용자의 위치를 비교해 +/-5도 범위 이내일 경우 감지
+  - 현재 시간이 일몰 후 또는 일출 전이면 "밤"으로 간주
+  - 위 두 조건이 모두 충족되면 이메일 알림 자동 발송
+  - 매 60초마다 체크 반복 (무한 루프 기반)
+  
+- **작동 방식:**  
+  1. iss-now.json API를 통해 현재 ISS 위치 추적
+  2. sunrise-sunset.org API로 현재 위치의 일출/일몰 시간 확인
+  3. 두 조건이 모두 True일 경우, smtplib로 이메일 전송
+  4. 60초마다 반복적으로 감지 수행 (time.sleep(60))
+
+- **사용 기술:**  
+ Python, datetime, requests, smtplib(이메일 전송), 무한 루프 & 조건문 처리
+
 ## 📧 Contact
 - GitHub: [@JIYUN000000](https://github.com/username)
 - Email: brilliantstar120@gmail.com
