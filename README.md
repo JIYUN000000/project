@@ -2,7 +2,7 @@
 100개의 파이썬 미니 프로젝트를 만들며 성장하는 개발 기록
 
 ## 📜 진행 상황
-✅ 31/100 완료
+✅ 32/100 완료
 📅 목표: 2025년 5월까지 100개 완성  
 
 ## 📂 프로젝트 목록
@@ -574,6 +574,26 @@ invited_names.txt에 입력된 이름을 활용하여, 각 사람에게 맞춘 �
 - **사용 기술:**  
  Python, tkinter GUI 활용, pandas, random.choice(), after()
 
+## 3️⃣2️⃣ 🎉 Birthday Email Automator
+- **설명:**  
+  이 프로젝트는 pandas, datetime, smtplib을 사용하여 특정 날짜에 생일인 사람에게 자동으로 이메일을 보내주는 프로그램입니다.
+생일자 정보를 birthdays.csv에 저장해두면, 매일 실행 시 해당 날짜와 일치하는 사람에게 개인화된 축하 메시지를 발송합니다.
+
+- **특징:**  
+  - datetime을 활용한 오늘 날짜 감지
+  - pandas를 활용한 생일자 검색
+  - [NAME] 자리의 개인화된 템플릿 편지 자동 선택
+  - smtplib을 사용한 이메일 전송
+  - 템플릿 파일을 무작위(letter_1.txt, letter_2.txt, letter_3.txt)로 선택하여 매번 다른 메시지 전송
+  
+- **작동 방식:**  
+  1. 오늘 날짜와 birthdays.csv 생일 정보를 비교
+  2. 생일인 사람이 있다면 letter_templates/letter_1~3.txt 중 하나를 무작위로 선택
+  3. [NAME]을 생일자의 이름으로 치환
+  4. smtplib로 이메일 전송
+
+- **사용 기술:**  
+ Python, datetime, pandas, random, smtplib(이메일 전송)
 ## 📧 Contact
 - GitHub: [@JIYUN000000](https://github.com/username)
 - Email: brilliantstar120@gmail.com
