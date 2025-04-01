@@ -615,6 +615,29 @@ open-notify API와 sunrise-sunset API를 활용해 실시간으로 조건을 체
 - **사용 기술:**  
  Python, datetime, requests, smtplib(이메일 전송), 무한 루프 & 조건문 처리
 
+## 3️⃣4️⃣ ❓ Quizzler - Trivia API & GUI
+- **설명:**  
+  이 프로젝트는 Open Trivia DB의 퀴즈 데이터를 실시간으로 받아와서,
+tkinter GUI를 통해 사용자가 직접 True/False 버튼을 클릭하며 퀴즈를 풀 수 있도록 만든 인터랙티브 퀴즈 애플리케이션입니다.
+점수가 실시간으로 갱신되고, 문제를 다 풀면 자동으로 종료됩니다.
+
+- **특징:**  
+  - requests로 외부 API(Open Trivia DB)에서 실시간 퀴즈 데이터 가져오기
+  - html.unescape()로 특수문자 깨짐 없이 문제 표시
+  - tkinter GUI에서 버튼 기반 인터랙션 제공 (True / False)
+  - 정답 여부에 따라 배경색을 빨강/초록으로 깜빡이며 피드백 제공
+  - 퀴즈 종료 시 점수 출력 & 버튼 비활성화 처리
+  
+- **작동 방식:**  
+  1. [iss-now.json API를 통해 현재 ISS 위치 추적](https://opentdb.com/api.php) 에서 퀴즈 데이터 불러오기
+  2. Question 객체로 변환하여 QuizBrain에 저장
+  3. QuizInterface 클래스를 통해 GUI 실행
+  4. 사용자는 True 또는 False 버튼을 클릭
+  5. 정답 여부 확인 후 점수 반영 및 피드백
+  6. 모든 문제 풀이 시 종료 메시지 출력 및 버튼 비활성화
+  7. 
+- **사용 기술:**  
+ Python, tkinter, requests, html.unscape() (HTML 문자 디코딩), 클래스 구조
 
 
 ## 📧 Contact
