@@ -2,7 +2,7 @@
 100개의 파이썬 미니 프로젝트를 만들며 성장하는 개발 기록
 
 ## 📜 진행 상황
-✅ 33/100 완료
+✅ 34/100 완료
 📅 목표: 2025년 5월까지 100개 완성  
 
 ## 📂 프로젝트 목록
@@ -614,6 +614,8 @@ open-notify API와 sunrise-sunset API를 활용해 실시간으로 조건을 체
 
 - **사용 기술:**  
  Python, datetime, requests, smtplib(이메일 전송), 무한 루프 & 조건문 처리
+
+
 
 ## 📧 Contact
 - GitHub: [@JIYUN000000](https://github.com/username)
