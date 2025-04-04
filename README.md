@@ -2,7 +2,7 @@
 100개의 파이썬 미니 프로젝트를 만들며 성장하는 개발 기록
 
 ## 📜 진행 상황
-✅ 34/100 완료
+✅ 35/100 완료
 📅 목표: 2025년 5월까지 100개 완성  
 
 ## 📂 프로젝트 목록
@@ -635,9 +635,30 @@ tkinter GUI를 통해 사용자가 직접 True/False 버튼을 클릭하며 퀴�
   4. 사용자는 True 또는 False 버튼을 클릭
   5. 정답 여부 확인 후 점수 반영 및 피드백
   6. 모든 문제 풀이 시 종료 메시지 출력 및 버튼 비활성화
-  7. 
+
 - **사용 기술:**  
  Python, tkinter, requests, html.unscape() (HTML 문자 디코딩), 클래스 구조
+
+## 3️⃣5️⃣ ☔ Rain Alert via SMS using Weather API
+- **설명:**  
+  이 프로젝트는 OpenWeatherMap API를 사용하여 향후 12시간 동안의 날씨를 확인하고, 비가 올 가능성이 있을 경우 문자(SMS)로 알림을 보내주는 시스템입니다.
+메시지는 Twilio를 통해 발송되며, "It's going to rain today. Remember to bring an umbrella."라는 친절한 리마인더를 자동 전송합니다.
+
+- **특징:**  
+  - OpenWeatherMap OneCall API를 통해 시간대별 날씨 데이터 수집
+  - **조건 코드(weather ID)**를 활용해 비 오는 조건 감지
+  - tkinter GUI에서 버튼 기반 인터랙션 제공 (True / False)
+  - Twilio를 이용한 자동 문자 메시지 발송 기능
+  - 매일 아침 자동 실행하여 출근길 전 알림 가능
+  
+- **작동 방식:**  
+  1. 지정한 위도/경도의 12시간 날씨 데이터 수집
+  2. 각 시간의 weather[0].id를 확인하여 비 코드 감지 (< 900)
+  3. 비가 올 경우 will_rain = True
+  4. Twilio API를 통해 SMS 발송
+
+- **사용 기술:**  
+ Python, requests, twilio, 조건문 및 반복
 
 
 ## 📧 Contact
