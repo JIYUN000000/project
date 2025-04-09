@@ -2,7 +2,7 @@
 100개의 파이썬 미니 프로젝트를 만들며 성장하는 개발 기록
 
 ## 📜 진행 상황
-✅ 35/100 완료
+✅ 37/100 완료
 📅 목표: 2025년 5월까지 100개 완성  
 
 ## 📂 프로젝트 목록
@@ -659,6 +659,45 @@ tkinter GUI를 통해 사용자가 직접 True/False 버튼을 클릭하며 퀴�
 
 - **사용 기술:**  
  Python, requests, twilio, 조건문 및 반복
+
+## 3️⃣6️⃣ 📈 Stock News Notifier with Twilio
+- **설명:**
+  이 프로젝트는 특정 주식(예: Tesla)의 주가가 급등하거나 급락할 경우, 관련 뉴스를 수집해서 **Twilio를 통해 문자(SMS)**로 전송하는 자동화 시스템입니다. 주가 변화율을 기준으로 뉴스 API를 활용해 최신 기사를 받아볼 수 있어, 투자 감시 및 알림 시스템으로 활용 가능합니다.
+
+- **특징:**
+  - Alpha Vantage API를 사용한 전일 대비 주가 변화 감지
+  - NewsAPI로 해당 기업 관련 최신 뉴스 기사 추출
+  - 주가 변화율이 기준(예: ±5%)을 넘을 경우 최신 뉴스 3건 문자로 전송
+  - Twilio API를 통해 사용자 핸드폰으로 자동 문자 발송
+ 
+- **작동 방식:**
+  1. Alpha Vantage API로 전일 및 전전일 주가를 비교
+  2. 변화율이 설정한 임계값(예: 5%)을 초과하면 NewsAPI로 기업명 포함 뉴스 조회
+  3. 상위 3개의 뉴스 제목 & 설명을 템플릿 형식으로 정리
+  4. 각 뉴스 메시지를 Twilio를 통해 핸드폰으로 전송
+ 
+- **사용 기술:**
+  Python, requests, Alpha Vantage API (주식 정보 수신), News API, twillio, 리스트 컴프리핸션 & JSON 파싱
+
+## 3️⃣7️⃣ 🚴 Cycling Tracker using Pixela API
+- **설명:**
+이 프로젝트는 Pixela API를 사용하여 매일 **운동량(예: 사이클링 거리)**을 기록하고, 웹 상에서 그래프 형태로 시각화할 수 있도록 만든 자동화 시스템입니다. 날짜별로 데이터를 추가, 수정, 삭제할 수 있어 습관 형성이나 운동 기록용으로 유용합니다.
+
+- **특징:**
+  - 사용자 계정 생성 및 인증 (token 기반)
+  - Pixela에 그래프 생성 (단위: Km, 타입: float)
+  - 오늘 날짜에 대한 운동 기록 추가 (POST)
+  - 기존 기록 수정 (PUT) 및 삭제 (DELETE) 기능 포함
+  - 모든 동작이 Pixela 대시보드에 시각적으로 반영
+ 
+- **작동 방식:**
+  1. 계정이 없을 경우 사용자 계정 생성 (POST /v1/users)
+  2. 그래프 생성 (POST /v1/users/USERNAME/graphs)
+  3. 오늘 날짜로 운동 기록 추가 (POST /graphs/GRAPH_ID)
+  4. 기록 수정 또는 삭제는 날짜 기반으로 진행 (PUT, DELETE)
+ 
+- **사용 기술:**
+  Python, requests, datetime, REST API 활용 (POST, PUT, DELETE)
 
 
 ## 📧 Contact
