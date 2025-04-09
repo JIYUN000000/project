@@ -26,4 +26,5 @@
 **자료구조**
 
 1. vector
-   - vector는 동적 배열을 제공하는 C++ STL(Standard Template Library)의 컨테이너입니다. 크기가 고정된 배열과 달리, 동적으로 크기를 변경할 수 있어 매우 유용합니다.
+   
+   - vector는 동적 배열을 제공하는 C++ STL(Standard Template Library)의 컨테이너. 크기가 고정된 배열과 달리, 동적으로 크기를 변경할 수 있어 매우 유용하다.
