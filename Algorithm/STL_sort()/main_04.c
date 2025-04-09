@@ -25,7 +25,7 @@ int main(void){
 		
 	sort(v.begin(), v.end(), compare); // 벡터의 첫 번째 값부터 마지막 값까지 정렬 
 	for(int i = 0; i < v.size(); i++){
-		cout << v[i].first << ' '; // second: 이름 정보 
+		cout << v[i].first << ' '; // first: 이름 정보 
 	}
 	return 0;
 	 
