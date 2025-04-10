@@ -699,6 +699,27 @@ tkinter GUI를 통해 사용자가 직접 True/False 버튼을 클릭하며 퀴�
 - **사용 기술:**
   Python, requests, datetime, REST API 활용 (POST, PUT, DELETE)
 
+## 3️⃣8️⃣ 🏃 Exercise Tracker with Nutritionix + Google Sheets
+- **설명:**
+이 프로젝트는 **사용자가 입력한 운동 문장(자연어)**을 기반으로, 운동 종류·소요 시간·소모 칼로리를 자동으로 분석한 뒤,
+Google Sheets에 기록하는 자동화 시스템입니다. Nutritionix API로 운동 데이터를 파싱하고, Sheety API를 통해 스프레드시트에 기록합니다.
+- **특징:**
+  - 자연어 입력 (예: "I ran 3 miles and did 30 minutes of yoga")
+  - Nutritionix API를 통해 운동 이름, 시간, 칼로리 자동 추출
+  - datetime 모듈로 현재 날짜와 시간 기록
+  - Sheety API를 사용해 운동 기록을 Google Sheets에 저장
+  - .env 파일을 통해 API 키 및 인증 정보 보안 관리
+ 
+- **작동 방식:**
+  1. 사용자로부터 운동 내용을 자연어로 입력받음
+  2. Nutritionix API에 입력된 운동 문장을 전송하여 분석
+  3. 반환된 운동 리스트를 반복하며, 각각의 운동 정보를 Google Sheet에 POST
+  4. 날짜, 시간, 운동명, 시간(분), 칼로리 정보가 시트에 한 줄씩 기록됨
+     
+- **사용 기술:**
+  Python, requests, datetime, dotenv(보안 정보 로딩), Nutritionix API, Sheety API 활용
+
+
 
 ## 📧 Contact
 - GitHub: [@JIYUN000000](https://github.com/username)
