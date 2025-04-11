@@ -2,7 +2,7 @@
 100개의 파이썬 미니 프로젝트를 만들며 성장하는 개발 기록
 
 ## 📜 진행 상황
-✅ 38/100 완료
+✅ 39/100 완료
 📅 목표: 2025년 5월까지 100개 완성  
 
 ## 📂 프로젝트 목록
@@ -718,6 +718,21 @@ Google Sheets에 기록하는 자동화 시스템입니다. Nutritionix API로 �
      
 - **사용 기술:**
   Python, requests, datetime, dotenv(보안 정보 로딩), Nutritionix API, Sheety API 활용
+
+## 3️⃣9️⃣ 🌐 Personal Portfolio with HTML
+- **설명:**
+이 프로젝트는 HTML을 이용해 만든 개인 소개 웹페이지입니다.
+본인의 이름, 직업, 간단한 자기소개, 학력 및 경력 정보가 포함되어 있으며, 추가로 취미 페이지(hobbies.html), **연락처 페이지(contact.html)**로 이동할 수 있는 링크도 제공됩니다.
+
+- **특징:**
+  - HTML 기본 구조(<html>, <head>, <body>) 학습
+  - <img>, <h1>, <p>, <ul>, <a> 태그 활용
+  - 외부 링크(GitHub 프로젝트) 연결
+  - 페이지 간 이동을 위한 내부 링크 구성 (My Hobbies, Contact Me)
+  - 기본적인 시맨틱 마크업 구성 이해
+ 
+- **사용 기술:**
+  HTML5, 기본 마크업 및 문서 구조, 태그 활용
 
 
 
