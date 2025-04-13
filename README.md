@@ -725,8 +725,8 @@ Google Sheets에 기록하는 자동화 시스템입니다. Nutritionix API로 �
 본인의 이름, 직업, 간단한 자기소개, 학력 및 경력 정보가 포함되어 있으며, 추가로 취미 페이지(hobbies.html), **연락처 페이지(contact.html)**로 이동할 수 있는 링크도 제공됩니다.
 
 - **특징:**
-  - HTML 기본 구조(<html>, <head>, <body>) 학습
-  - <img>, <h1>, <p>, <ul>, <a> 태그 활용
+  - HTML 기본 구조 학습
+  - img, h1, p, ul, a 태그 활용
   - 외부 링크(GitHub 프로젝트) 연결
   - 페이지 간 이동을 위한 내부 링크 구성 (My Hobbies, Contact Me)
   - 기본적인 시맨틱 마크업 구성 이해
