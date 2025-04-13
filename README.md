@@ -745,7 +745,7 @@ Google Sheets에 기록하는 자동화 시스템입니다. Nutritionix API로 �
   - hobbies.html, contact.html 등 내부 페이지 연결
   - mailto: 기능을 활용한 간단한 폼 기반 이메일 전송 기능
   - HTML의 기초 레이아웃 구성법 학습 목적에 적합
-  - 텍스트 강조(<em>, <strong>), 링크(<a>), 이미지(<img>) 포함
+  - 텍스트 강조(em, strong), 링크(a), 이미지(img) 포함
 
 - **사용 기술:**
   HTML5, 기본 마크업 및 문서 구조, 폼 처리(mailto: 기반 간단 전송 가능), 내부 링크 구조 구성(페이지 연결)
