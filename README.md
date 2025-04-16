@@ -747,7 +747,7 @@ Google Sheets에 기록하는 자동화 시스템입니다. Nutritionix API로 �
   - HTML의 기초 레이아웃 구성법 학습 목적에 적합
   - 텍스트 강조(em, strong), 링크(a), 이미지(img) 포함
 
-  **사용 기술:**
+- **사용 기술:**
     - HTML5, 기본 마크업 및 문서 구조, 폼 처리(mailto: 기반 간단 전송 가능), 내부 링크 구조 구성(페이지 연결)
 
 ## 4️⃣1️⃣ 🎨 Personal Portfolio Website v2 (with CSS)
@@ -762,7 +762,7 @@ Google Sheets에 기록하는 자동화 시스템입니다. Nutritionix API로 �
   - <hr> 태그를 이용한 점선 구분선으로 시각적 구분 강화
   - 제목(h1, h3)의 색상을 부드러운 톤으로 변경하여 통일성 있는 디자인 적용
 
-  **사용 기술:**
+- **사용 기술:**
     - HTML5, 기본 마크업 및 문서 구조, CSS3, 스타일 재사용을 위한 외부 스타일시트 적용
 
 ## 4️⃣2️⃣ 🎬 100 Best Movies with BeautifulSoup
@@ -784,7 +784,7 @@ Empire 웹사이트의 "100 Greatest Movies of All Time" 목록을 스크래핑�
   - 리스트를 뒤집어 1위부터 순서대로 정렬
   - movies.txt 파일로 출력
 
-  **사용 기술:**
+- **사용 기술:**
     - Python, requests, BeautifulSoup, 리스트 컴프리핸션, 파일 입출력(with open())
 
 
