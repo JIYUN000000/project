@@ -2,7 +2,7 @@
 100개의 파이썬 미니 프로젝트를 만들며 성장하는 개발 기록
 
 ## 📜 진행 상황
-✅ 41/100 완료
+✅ 42/100 완료
 📅 목표: 2025년 5월까지 100개 완성  
 
 ## 📂 프로젝트 목록
@@ -765,6 +765,27 @@ Google Sheets에 기록하는 자동화 시스템입니다. Nutritionix API로 �
 **사용 기술:**
   - HTML5, 기본 마크업 및 문서 구조, CSS3, 스타일 재사용을 위한 외부 스타일시트 적용
 
+## 4️⃣2️⃣ 🎬 100 Best Movies with BeautifulSoup
+- **설명:**
+이 프로젝트는 Python의 requests와 BeautifulSoup을 활용하여
+Empire 웹사이트의 "100 Greatest Movies of All Time" 목록을 스크래핑하고,
+결과를 movies.txt 파일에 저장하는 간단한 웹 크롤러입니다.
+
+- **특징:**
+  - BeautifulSoup를 활용한 HTML 파싱
+  - 웹사이트의 h3.title 태그를 기반으로 영화 제목 수집
+  - 리스트 역순 정렬 (100 → 1위 순서로 보기 좋게 저장)
+  - UTF-8 인코딩으로 영화 제목 파일 출력
+
+- **작동 방식:**
+  - 웹 아카이브 주소로부터 HTML 가져오기
+  - <h3 class="title"> 태그를 모두 찾기
+  - .getText()로 텍스트만 추출 → 리스트 저장
+  - 리스트를 뒤집어 1위부터 순서대로 정렬
+  - movies.txt 파일로 출력
+
+**사용 기술:**
+  - Python, requests, BeautifulSoup, 리스트 컴프리핸션, 파일 입출력(with open())
 
 
 ## 📧 Contact
