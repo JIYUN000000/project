@@ -2,7 +2,7 @@
 100개의 파이썬 미니 프로젝트를 만들며 성장하는 개발 기록
 
 ## 📜 진행 상황
-✅ 42/100 완료
+✅ 43/100 완료
 📅 목표: 2025년 5월까지 100개 완성  
 
 ## 📂 프로젝트 목록
@@ -786,6 +786,31 @@ Empire 웹사이트의 "100 Greatest Movies of All Time" 목록을 스크래핑�
 
 - **사용 기술:**
   Python, requests, BeautifulSoup, 리스트 컴프리핸션, 파일 입출력(with open())
+
+## 4️⃣3️⃣ 🌐 Flask & Decorators Basics Project
+- hello.py Flask 기본 라우팅 실습
+- **설명:**
+이 파일은 Flask 프레임워크를 사용하여 아주 간단한 웹 서버를 생성하고,
+기본 라우팅(/ 및 /bye) 기능을 테스트한 예제입니다.
+
+- **특징:**
+  - @app.route() 데코레이터를 사용해 URL 경로 연결
+  - / 요청 시 "Hello, World!" 응답
+  - /bye 요청 시 "Bye" 응답
+  - __name__ == "__main__" 조건을 통해 직접 실행 시 서버 실행
+ 
+  - 데코레이터로 함수 실행 시간 측
+- **설명:**
+이 파일은 Python의 데코레이터 기능을 활용하여
+두 개의 함수 실행 속도를 측정하고 출력하는 실습입니다.
+
+- **특징:**
+  - speed_calc_decorator 데코레이터 정의
+  - time.time()을 사용해 시작/종료 시각 기록
+  - fast_function()과 slow_function() 각각 실행 시간 측정
+
+- **사용 기술:**
+  Flask, Python Decorator, time 모듈을 활용한 성능 측정, 함수형 프로그래밍 개념 학
 
 
 ## 📧 Contact
