@@ -2,7 +2,7 @@
 100개의 파이썬 미니 프로젝트를 만들며 성장하는 개발 기록
 
 ## 📜 진행 상황
-✅ 43/100 완료
+✅ 44/100 완료
 📅 목표: 2025년 5월까지 100개 완성  
 
 ## 📂 프로젝트 목록
@@ -810,7 +810,23 @@ Empire 웹사이트의 "100 Greatest Movies of All Time" 목록을 스크래핑�
   - fast_function()과 slow_function() 각각 실행 시간 측정
 
 - **사용 기술:**
-  Flask, Python Decorator, time 모듈을 활용한 성능 측정, 함수형 프로그래밍 개념 학
+  Flask, Python Decorator, time 모듈을 활용한 성능 측정, 함수형 프로그래밍
+
+## 4️⃣4️⃣ 🎲 Number Guessing Game with Flask
+- hello.py Flask 기본 라우팅 실습
+- **설명:**
+이 프로젝트는 Python의 Flask를 활용해 만든 숫자 맞추기 웹 애플리케이션입니다.
+서버가 0부터 9 사이의 임의의 숫자를 선택하고, 사용자는 URL 경로를 통해 숫자를 입력하여 정답을 맞추는 형식입니다.
+
+- **특징:**
+  - 서버가 시작될 때 0~9 사이의 랜덤 숫자 생성
+  - / 경로: 숫자를 맞춰보라는 메시지와 함께 GIF 이미지 출력
+  - 정답: "You found me!"
+  - 높음: "Too high, try again!"
+  - 낮음: "Too low, try again!"
+
+- **사용 기술:**
+  Flask, HTML 기본 태그 출력, 랜덤 숫자 생성
 
 
 ## 📧 Contact
