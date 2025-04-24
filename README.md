@@ -2,7 +2,7 @@
 100개의 파이썬 미니 프로젝트를 만들며 성장하는 개발 기록
 
 ## 📜 진행 상황
-✅ 44/100 완료
+✅ 45/100 완료
 📅 목표: 2025년 5월까지 100개 완성  
 
 ## 📂 프로젝트 목록
@@ -813,7 +813,6 @@ Empire 웹사이트의 "100 Greatest Movies of All Time" 목록을 스크래핑�
   Flask, Python Decorator, time 모듈을 활용한 성능 측정, 함수형 프로그래밍
 
 ## 4️⃣4️⃣ 🎲 Number Guessing Game with Flask
-- hello.py Flask 기본 라우팅 실습
 - **설명:**
 이 프로젝트는 Python의 Flask를 활용해 만든 숫자 맞추기 웹 애플리케이션입니다.
 서버가 0부터 9 사이의 임의의 숫자를 선택하고, 사용자는 URL 경로를 통해 숫자를 입력하여 정답을 맞추는 형식입니다.
@@ -828,6 +827,21 @@ Empire 웹사이트의 "100 Greatest Movies of All Time" 목록을 스크래핑�
 - **사용 기술:**
   Flask, HTML 기본 태그 출력, 랜덤 숫자 생성
 
+## 4️⃣5️⃣ 🌐 Flask 기반 포트폴리오 웹사이트 (Flask + HTML Template)
+- **설명:**
+이 프로젝트는 Python의 Flask 프레임워크와 HTML 템플릿을 사용하여 제작한
+개인 포트폴리오 웹사이트입니다.
+HTML5 UP에서 제공하는 Aerial 템플릿을 활용하여 세련된 디자인으로 나를 소개합니다.
+
+- **특징:**
+  - Flask를 사용하여 서버 사이드 구성
+  - render_template()을 통해 Jinja 템플릿 엔진으로 HTML 렌더링
+  - **정적 파일(css, js, 이미지)**은 /static 폴더에 관리
+  - HTML 템플릿 내 Font Awesome 아이콘으로 소셜 링크 구성
+  - 반응형 웹 디자인 적용 (모바일/PC 대응)
+
+- **사용 기술:**
+  Flask(render_template), HTML5 + CSS3 (HTML5 UP - Aerial Template)
 
 ## 📧 Contact
 - GitHub: [@JIYUN000000](https://github.com/username)
