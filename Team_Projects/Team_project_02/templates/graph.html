@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>조건별 범죄 예측 모니터링</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+      width: 1800px;
+      margin: auto;
+    }
+
+    header {
+      background-color: #26969c;
+      color: white;
+      text-align: center;
+      width: 100%; /* 전체 화면 너비로 설정 */
+    
+    }
+
+    .content {
+      padding: 20px;
+      max-width: 1500px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column; /* 수직 방향 */
+      align-items: center; /* 수평 중앙 정렬 */
+      gap: 5px;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .charts-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3개의 열로 설정 */
+      grid-template-rows: auto auto;
+      justify-items: center;
+      width: 100%;
+      
+    }
+
+    .news-section {
+      grid-column: 1 / span 3;
+      grid-row: 2;
+      width: 1440px;
+    }
+
+    .new-grid-box {
+    grid-column: 3; /* 세 번째 열에 배치 */
+    grid-row: 2; /* 두 번째 행에 배치 */
+    background-color: #fff;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    width: 417px;
+    height: 284px;
+    padding: 23px;
+  }
+
+    .chart-box {
+      flex: 1;
+      min-width: 430px;
+      padding: 10px;
+      text-align: center;
+      background-color: white;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 각 그래프 박스에 그림자 */
+      margin-bottom: 30px;
+
+    }
+
+    canvas {
+      width: 100%;
+      height: auto;
+    }
+
+    #crime-graph{
+      width: 100%;
+    }
+
+  #mainRegionSelect, #subRegionSelect{
+    border-radius: 5px;
+    height: 24px;
+  }
+
+  .table-container {
+    margin-left: 350px;
+    margin-bottom: 20px;
+}
+.news-section table {
+    text-align: center;
+}
+
+.news-section th, .news-section td {
+    text-align: center !important;
+}
+table td, table th {
+    padding-left: 15px; /* 왼쪽 여백 */
+    padding-right: 15px; /* 오른쪽 여백 */
+    padding-top: 5px;
+}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <h1>조건별 범죄 예측 모니터링</h1>
+  </header>
+
+  <div class="content">
+    
+      <div class="charts-container">
+    
+
+      <!-- 2. 시간대별 범죄 발생률 -->
+      <div class="chart-box">
+        <h3>현재 시간대 예상 범죄</h3>
+        <canvas id="crimePieChart"></canvas>
+      </div>
+
+
+      <!-- 3. 요일별 범죄 발생률 -->
+      <div class="chart-box">
+        <h3 id="currentDay">여기</h3>
+        <canvas id="dayOfWeekCrimeChart"></canvas>
+      </div>
+
+
+      <!-- 4. 지역별 범죄 발생률 비교 -->
+      <div class="chart-box">
+        <h3>2023 지역별 범죄 TOP 5 조회</h3>
+        <div class="content">
+          <label for="mainRegionSelect">지역
+            <select id="mainRegionSelect">
+              {% for region in regions %}
+                <option value="{{ region }}">{{ region }}</option>
+              {% endfor %}
+            </select>
+            <select id="subRegionSelect">
+              <option value="">세부 지역을 선택하세요</option>
+            </select>
+          </label>
+          <div id="graph-container">
+            <canvas id="crimeChart" width="400" height="400"></canvas>
+          </div>
+        </div>
+
+         <script src="../static/graphes.js"></script>
+        
+      </div>
+      
+      <div class = "chart-box news-section">
+          <h3>📢 범죄 보도 뉴스 📢</h3>
+          <input type="date" id="datePicker" class="form-control w-25 mb-3" style="border-radius: 5px; height: 24px;" value="{{ default_date }}">
+          <br><br>
+          <div class = "news-section">
+          <div id = "table-container" class="table-container">
+            {{html_table | safe}}
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <script>
+      var initialArticles = {{initial_articles|tojson | safe }}; 
+    </script>
+
+ 
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!--git config --global core.autocrlf true-->
+</body>
+</html>
